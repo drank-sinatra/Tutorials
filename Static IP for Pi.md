@@ -1,5 +1,6 @@
 # Static IP for Pi
-## 4.
+
+`sudo nano /etc/dhcpcd.conf`
  Within this file, enter the following lines.
 First, you have to decide if you want to set the static IP for your “**eth0**” (Ethernet) connector or you “**wlan0**” (WiFi) connection. Decide which one you want and replace “**<NETWORK>**” with it.
 Make sure you replace “**<STATICIP>**” with the IP address that you want to assign to your Raspberry Pi. Make sure this is not an IP that could be easily attached to another device on your network.
