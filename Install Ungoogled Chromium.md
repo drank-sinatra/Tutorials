@@ -1,4 +1,6 @@
 # Install Ungoogled Chromium
+## Preface
+Ungoogled Chromium is a very fast browser stripped of all Google services to make it as private as possible whilst still providing an optimal experience for web applications that prefer Chrome.
 
 - - - -
 
@@ -20,14 +22,27 @@ sudo apt update
 sudo apt install -y ungoogled-chromium
 ```
 
----
+- - - -
 
-## For Manjaro (x64 Only)
+## Arch-based Distros (x64 Only)
+> **NOTE:** Ensure the AUR is enabled  
+```
+sudo pacman -Syu ungoogled-chromium
+```
 
-1. Open Add/Remove Software
-2. Click the three dots, and choose preferences
-3. Enter password as required
-4. Click the AUR tab
-5. Tick the option for **Enable AUR support**
-6. Search for **ungoogled-chromium**
-7. Click **Install**
+- - - -
+
+## Fedora
+```
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install chromium-browser-privacy
+```
+
+- - - -
+
+## macOS
+> **NOTE:** Ensure that Homebrew is installed following this [tutorial](https://github.com/drank-sinatra/Tutorials/blob/master/Install%20the%20Homebrew%20Package%20Manager%20on%20macOS.md)  
+```
+brew fetch --cask eloston-chromium
+brew install --cask eloston-chromium
+```
