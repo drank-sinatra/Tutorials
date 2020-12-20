@@ -1,5 +1,5 @@
 # The Quick and Dirty Guide to Fancy Terminals
-- - - -
+
 ## Preface
 This should work in most *X operating systems. It’s been tested on Raspberry Pi OS, Ubuntu 20.x, Manjaro 20.x and macOS Catalina and Big Sur.
 > **NOTE:** On macOS, it is recommended to install iTerm2 prior to following this tutorial as it is much more customisable than Apple’s Terminal. It may be downloaded [here](https://iterm2.com/downloads.html).  
