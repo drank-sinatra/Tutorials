@@ -8,59 +8,61 @@ This should work in most *X operating systems. It’s been tested on Raspberry P
 1. Open a terminal
 2. For any **Debian**-based OS, enter the following commands
 ```
-sudo apt update && apt upgrade -y
-sudo apt install -y git zsh powerline zsh-syntax-highlighting
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y git zsh powerline
 ```
 3. For any **Arch**-based OS, enter the following command:
 ```
-sudo pacman -Syu git zsh powerline zsh-syntax-highlighting
+sudo pacman -Syu git zsh powerline
 ```
 4. For **macOS** enter the following command:
 ```
-brew install zsh zsh-syntax-highlighting
+xcode-select --install
 ```
 5. Enter the following commands:
 ```
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 6. For **Linux** enter the following
 ```
-echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 chsh -s $(which zsh)
 ```
 7. For **macOS** enter the following:
 ```
-echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 chsh -s /usr/local/bin/zsh
 ```
-9. Run the command `nano .zshrc`
-10. Locate the line containing **ZSH_THEME=**
-11. Change the line to read **ZSH_THEME="powerlevel10k/powerlevel10k"**
-12. Locate the line containing **DISABLE_UPDATE_PROMPT="true"**
-13. Uncomment the line by deleting the **#**
-14. Locate the line containing **export UPDATE_ZSH_DAYS=13**
-15. Uncomment the line by deleting the **#**
-16. Change the line to read **export UPDATE_ZSH_DAYS=1**
-17. Locate the line containing **ENABLE_CORRECTION="true"**
-18. Uncomment the line by deleting the **#**
-19. Locate the line beginning with **plugins=(**
-20. Select all text on the line
-21. Press **Backspace** to delete the line
-22. Copy the following:
+8. Run the command `nano .zshrc`
+9. Locate the line containing **ZSH_THEME=**
+10. Change the line to read **ZSH_THEME=“powerlevel10k/powerlevel10k”**
+11. Locate the line containing **DISABLE_UPDATE_PROMPT="true"**
+12. Uncomment the line by deleting the **#**
+13. Locate the line containing **export UPDATE_ZSH_DAYS=13**
+14. Uncomment the line by deleting the **#**
+15. Change the line to read **export UPDATE_ZSH_DAYS=1**
+16. Locate the line containing **ENABLE_CORRECTION="true"**
+17. Uncomment the line by deleting the **#**
+18. Locate the line beginning with **plugins=(**
+19. Select all text on the line
+20. Press **Backspace** to delete the line
+21. Copy the following:
 ```
 plugins=(
+  brew
   git
   sudo
   colored-man-pages
+  zsh-syntax-highlighting
 )
 ```
-12. Return to the terminal and paste the copied text
-13. Press **CTRL+X** to exit
-14. Enter **Y** to save changes
-15. Press **Enter**
-16. Reboot the computer
-17. Open a terminal to verify that changes were successful
+22. Return to the terminal and paste the copied text
+23. Press **CTRL+X** to exit
+24. Enter **Y** to save changes
+25. Press **Enter**
+26. Reboot the computer
+27. Open a terminal to verify that changes were successful
 
 ## Operations and Maintenance
 1. To update Oh My ZSH manually, run the command `omz update`
