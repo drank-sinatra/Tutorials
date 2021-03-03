@@ -43,6 +43,5 @@ sudo dnf install chromium-browser-privacy
 ## macOS
 > **NOTE:** Ensure that Homebrew is installed following this [tutorial](https://github.com/drank-sinatra/Tutorials/blob/master/Install%20the%20Homebrew%20Package%20Manager%20on%20macOS.md)  
 ```
-brew fetch --cask eloston-chromium
 brew install --cask eloston-chromium
 ```
