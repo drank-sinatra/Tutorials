@@ -21,7 +21,7 @@ default via 172.26.5.1 dev eth0 src 172.26.5.4 metric 202
 search workgroup
 nameserver 172.26.5.2	 
 ```
-3. Enter the command `cp /etc/dchpcd.conf /etc/dhcpcd.org`
+3. Enter the command `cp /etc/dhcpcd.conf /etc/dhcpcd.org`
 4. Enter the command `sudo nano /etc/dhcpcd.conf`
 5. Navigate to the end of the file
 6. Copy the following:
