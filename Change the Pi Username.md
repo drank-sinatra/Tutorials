@@ -6,7 +6,7 @@
 5. Press **CTRL+X** to close and save the file
 6. Press **Y**
 7. Press **Enter**
-8. Restart the sshd service using `/etc/init.d/ssh restart`
+8. Restart the sshd service using `sudo systemctl reload sshd`
 9. Set a root password using `sudo passwd root`
 10. Logout using `logout`
 11. Login as root using the newly set password
