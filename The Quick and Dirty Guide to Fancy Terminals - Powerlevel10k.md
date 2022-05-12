@@ -37,11 +37,11 @@ chsh -s /usr/local/bin/zsh
 8. Run the command `nano .zshrc`
 9. Locate the line containing **ZSH_THEME=**
 10. Change the line to read **ZSH_THEME=“powerlevel10k/powerlevel10k”**
-11. Locate the line containing **DISABLE_UPDATE_PROMPT="true"**
+11. Locate the line containing **zstyle ':omz:update' mode auto**
 12. Uncomment the line by deleting the **#**
-13. Locate the line containing **export UPDATE_ZSH_DAYS=13**
+13. Locate the line containing **zstyle ':omz:update' frequency 13**
 14. Uncomment the line by deleting the **#**
-15. Change the line to read **export UPDATE_ZSH_DAYS=1**
+15. Change the line to read **zstyle ':omz:update' frequency 1**
 16. Locate the line containing **ENABLE_CORRECTION="true"**
 17. Uncomment the line by deleting the **#**
 18. Locate the line beginning with **plugins=(**
