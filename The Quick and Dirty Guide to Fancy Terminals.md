@@ -37,11 +37,11 @@ chsh -s /usr/local/bin/zsh
 8. Locate the line containing **ZSH_THEME=**
 9. Change the line to read **ZSH_THEME=“agnoster”**
 > Other themes can be found [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes).
-10. Locate the line containing **DISABLE_UPDATE_PROMPT="true"**
+10. Locate the line containing **zstyle ':omz:update' mode auto**
 11. Uncomment the line by deleting the **#**
-12. Locate the line containing **export UPDATE_ZSH_DAYS=13**
+12. Locate the line containing **zstyle ':omz:update' frequency 13**
 13. Uncomment the line by deleting the **#**
-14. Change the line to read **export UPDATE_ZSH_DAYS=1**
+14. Change the line to read **zstyle ':omz:update' frequency 1**
 15. Locate the line containing **ENABLE_CORRECTION="true"**
 16. Uncomment the line by deleting the **#**
 17. Locate the line beginning with **plugins=(**
